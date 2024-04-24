@@ -1,13 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 21 14:38:53 2015
-
-@author: Pavitrakumar
-
-"""
-
 import numpy as np
-# from scipy.misc.pilutil import imresize
 from needed import imresize
 import cv2
 from skimage.feature import hog
