@@ -16,9 +16,9 @@ model = load_model('C:/Users/anant/Desktop/Pothole Detection using Machine Learn
 # y_test = np.load('./models/trainData/128x72x3x10000/y_test.npy')
 
 ## load Testing data : non-pothole
-nonPotholeTestImages = glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/test/Plain/*.jpg")
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
+nonPotholeTestImages = glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/test/Plain/*.jpg")
+# nonPotholeTrainImages.extend(glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
+# nonPotholeTrainImages.extend(glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
 test2 = [cv2.imread(img,0) for img in nonPotholeTestImages]
 # train2[train2 != np.array(None)]
 for i in range(0,len(test2)):
@@ -27,9 +27,9 @@ temp4 = np.asarray(test2)
 
 
 ## load Testing data : potholes
-potholeTestImages = glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/test/Pothole/*.jpg")
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
+potholeTestImages = glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/test/Pothole/*.jpg")
+# nonPotholeTrainImages.extend(glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
+# nonPotholeTrainImages.extend(glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
 test1 = [cv2.imread(img,0) for img in potholeTestImages]
 # train2[train2 != np.array(None)]
 for i in range(0,len(test1)):
