@@ -45,9 +45,9 @@ def kerasModel4():
 size=100
 
  ## load Training data : pothole
-potholeTrainImages = glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Pothole/*.jpg")
-potholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Pothole/*.jpeg"))
-potholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Pothole/*.png"))
+potholeTrainImages = glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Pothole/*.jpg")
+potholeTrainImages.extend(glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Pothole/*.jpeg"))
+potholeTrainImages.extend(glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Pothole/*.png"))
 
 train1 = [cv2.imread(img,0) for img in potholeTrainImages]
 for i in range(0,len(train1)):
@@ -56,9 +56,7 @@ temp1 = np.asarray(train1)
 
 
 #  ## load Training data : non-pothole
-nonPotholeTrainImages = glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpg")
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
+nonPotholeTrainImages = glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpg")
 train2 = [cv2.imread(img,0) for img in nonPotholeTrainImages]
 # train2[train2 != np.array(None)]
 for i in range(0,len(train2)):
@@ -68,9 +66,7 @@ temp2 = np.asarray(train2)
 
 
 ## load Testing data : non-pothole
-nonPotholeTestImages = glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/test/Plain/*.jpg")
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
+nonPotholeTestImages = glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/test/Plain/*.jpg")
 test2 = [cv2.imread(img,0) for img in nonPotholeTestImages]
 # train2[train2 != np.array(None)]
 for i in range(0,len(test2)):
@@ -79,9 +75,7 @@ temp4 = np.asarray(test2)
 
 
 ## load Testing data : potholes
-potholeTestImages = glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/test/Pothole/*.jpg")
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.jpeg"))
-# nonPotholeTrainImages.extend(glob.glob("C:/Users/anant/Desktop/pothole-and-plain-rode-images/My Dataset/train/Plain/*.png"))
+potholeTestImages = glob.glob("C:/Users/alakh/Desktop/pothole-and-plain-rode-images/My Dataset/test/Pothole/*.jpg")
 test1 = [cv2.imread(img,0) for img in potholeTestImages]
 # train2[train2 != np.array(None)]
 for i in range(0,len(test1)):
